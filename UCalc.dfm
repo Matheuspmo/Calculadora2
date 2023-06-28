@@ -1,0 +1,259 @@
+object FrmCalc: TFrmCalc
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Calculadora'
+  ClientHeight = 391
+  ClientWidth = 320
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Position = poScreenCenter
+  OnShow = FormShow
+  TextHeight = 13
+  object BtnSinal: TButton
+    Left = 1
+    Top = 335
+    Width = 80
+    Height = 52
+    Caption = '+/-'
+    TabOrder = 0
+    OnClick = BtnSinalClick
+  end
+  object Btn0: TButton
+    Left = 80
+    Top = 335
+    Width = 80
+    Height = 52
+    Caption = '0'
+    TabOrder = 1
+    OnClick = Btn0Click
+  end
+  object BtnVirgula: TButton
+    Left = 159
+    Top = 335
+    Width = 80
+    Height = 52
+    Caption = ','
+    TabOrder = 2
+    OnClick = BtnVirgulaClick
+  end
+  object BtnIgual: TButton
+    Left = 238
+    Top = 335
+    Width = 80
+    Height = 52
+    Caption = '='
+    TabOrder = 3
+    OnClick = BtnIgualClick
+  end
+  object Btn1: TButton
+    Left = 1
+    Top = 284
+    Width = 80
+    Height = 52
+    Caption = '1'
+    TabOrder = 4
+    OnClick = Btn1Click
+  end
+  object Btn2: TButton
+    Left = 80
+    Top = 284
+    Width = 80
+    Height = 52
+    Caption = '2'
+    TabOrder = 5
+    OnClick = Btn2Click
+  end
+  object Btn3: TButton
+    Left = 159
+    Top = 284
+    Width = 80
+    Height = 52
+    Caption = '3'
+    TabOrder = 6
+    OnClick = Btn3Click
+  end
+  object BtnSoma: TButton
+    Left = 238
+    Top = 284
+    Width = 80
+    Height = 52
+    Caption = '+'
+    TabOrder = 7
+    OnClick = BtnSomaClick
+  end
+  object Btn4: TButton
+    Left = 1
+    Top = 233
+    Width = 80
+    Height = 52
+    Caption = '4'
+    TabOrder = 8
+    OnClick = Btn4Click
+  end
+  object Btn5: TButton
+    Left = 80
+    Top = 233
+    Width = 80
+    Height = 52
+    Caption = '5'
+    TabOrder = 9
+    OnClick = Btn5Click
+  end
+  object Btn6: TButton
+    Left = 159
+    Top = 233
+    Width = 80
+    Height = 52
+    Caption = '6'
+    TabOrder = 10
+    OnClick = Btn6Click
+  end
+  object BtnSubtr: TButton
+    Left = 238
+    Top = 233
+    Width = 80
+    Height = 52
+    Caption = '-'
+    TabOrder = 11
+    OnClick = BtnSubtrClick
+  end
+  object BtnApagar: TButton
+    Left = 238
+    Top = 80
+    Width = 80
+    Height = 52
+    Caption = #9003
+    TabOrder = 12
+    OnClick = BtnApagarClick
+  end
+  object Btn7: TButton
+    Left = 1
+    Top = 182
+    Width = 80
+    Height = 52
+    Caption = '7'
+    TabOrder = 13
+    OnClick = Btn7Click
+  end
+  object Btn8: TButton
+    Left = 80
+    Top = 182
+    Width = 80
+    Height = 52
+    Caption = '8'
+    TabOrder = 14
+    OnClick = Btn8Click
+  end
+  object Btn9: TButton
+    Left = 159
+    Top = 182
+    Width = 80
+    Height = 52
+    Caption = '9'
+    TabOrder = 15
+    OnClick = Btn9Click
+  end
+  object BtnMult: TButton
+    Left = 238
+    Top = 182
+    Width = 80
+    Height = 52
+    Caption = 'X'
+    TabOrder = 16
+    OnClick = BtnMultClick
+  end
+  object BtnLimpar: TButton
+    Left = 80
+    Top = 80
+    Width = 80
+    Height = 52
+    Caption = 'CE'
+    TabOrder = 17
+    OnClick = BtnLimparClick
+  end
+  object BtnLimparTudo: TButton
+    Left = 159
+    Top = 80
+    Width = 80
+    Height = 52
+    Caption = 'C'
+    TabOrder = 18
+    OnClick = BtnLimparTudoClick
+  end
+  object BtnPorcent: TButton
+    Left = 1
+    Top = 80
+    Width = 80
+    Height = 52
+    Caption = '%'
+    TabOrder = 19
+    OnClick = BtnPorcentClick
+  end
+  object BtnUmSobreValor: TButton
+    Left = 1
+    Top = 131
+    Width = 80
+    Height = 52
+    Caption = '1/x'
+    TabOrder = 20
+    OnClick = BtnUmSobreValorClick
+  end
+  object BtnValorQuadrado: TButton
+    Left = 80
+    Top = 131
+    Width = 80
+    Height = 52
+    Caption = 'x'#178
+    TabOrder = 21
+    OnClick = BtnValorQuadradoClick
+  end
+  object BtnRaizQuadradaValor: TButton
+    Left = 159
+    Top = 131
+    Width = 80
+    Height = 52
+    Caption = #8730'x'
+    TabOrder = 22
+    OnClick = BtnRaizQuadradaValorClick
+  end
+  object BtnDiv: TButton
+    Left = 238
+    Top = 131
+    Width = 80
+    Height = 52
+    Caption = #247
+    TabOrder = 23
+    OnClick = BtnDivClick
+  end
+  object Tela1: TEdit
+    Left = 1
+    Top = 25
+    Width = 317
+    Height = 49
+    Alignment = taRightJustify
+    AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -37
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 24
+  end
+  object Tela2: TEdit
+    Left = 1
+    Top = 2
+    Width = 317
+    Height = 21
+    Alignment = taRightJustify
+    ReadOnly = True
+    TabOrder = 25
+  end
+end
